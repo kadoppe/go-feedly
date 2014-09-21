@@ -18,20 +18,20 @@ const (
 )
 
 type Client struct {
-	client        *http.Client
-	BaseURL       *url.URL
-	UserAgent     string
-	Categories    *CategoriesService
-	Entries       *EntriesService
-	Feeds         *FeedsService
-	Markers       *MarkersService
-	Mixes         *MixesService
-	Profile       *ProfileService
-	Search        *SearchService
-	Streams       *StreamsService
-	Subscriptions *SubscriptionsService
-	Tags          *TagsService
-	Topics        *TopicsService
+	client     *http.Client
+	BaseURL    *url.URL
+	UserAgent  string
+	Categories *CategoriesService
+	// Entries       *EntriesService
+	// Feeds         *FeedsService
+	// Markers       *MarkersService
+	// Mixes         *MixesService
+	// Profile       *ProfileService
+	// Search        *SearchService
+	// Streams       *StreamsService
+	// Subscriptions *SubscriptionsService
+	// Tags          *TagsService
+	// Topics        *TopicsService
 }
 
 func NewClient(httpClient *http.Client) *Client {
@@ -48,16 +48,16 @@ func NewClient(httpClient *http.Client) *Client {
 	}
 
 	c.Categories = &CategoriesService{client: c}
-	c.Entries = &EntriesService{client: c}
-	c.Feeds = &FeedsService{client: c}
-	c.Markers = &MarkersService{client: c}
-	c.Mixes = &MixesService{client: c}
-	c.Profile = &ProfileService{client: c}
-	c.Search = &SearchService{client: c}
-	c.Streams = &StreamsService{client: c}
-	c.Subscriptions = &SubscriptionsService{client: c}
-	c.Tags = &TagsService{client: c}
-	c.Topics = &TopicsService{client: c}
+	// c.Entries = &EntriesService{client: c}
+	// c.Feeds = &FeedsService{client: c}
+	// c.Markers = &MarkersService{client: c}
+	// c.Mixes = &MixesService{client: c}
+	// c.Profile = &ProfileService{client: c}
+	// c.Search = &SearchService{client: c}
+	// c.Streams = &StreamsService{client: c}
+	// c.Subscriptions = &SubscriptionsService{client: c}
+	// c.Tags = &TagsService{client: c}
+	// c.Topics = &TopicsService{client: c}
 
 	return c
 }

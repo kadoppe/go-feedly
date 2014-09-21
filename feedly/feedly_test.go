@@ -31,6 +31,12 @@ func teardown() {
 	server.Close()
 }
 
+func testMethod(t *testing.T, r *http.Request, want string) {
+	if want != r.Method {
+		t.Errorf("Request method = %v, want %v", r.Method, want)
+	}
+}
+
 type values map[string]string
 
 func TestNewClient(t *testing.T) {
