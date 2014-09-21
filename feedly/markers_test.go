@@ -25,7 +25,6 @@ func TestMarkerService_UnreadCounts(t *testing.T) {
 				"updated": 1367539068016,
 				"count": 601,
 				"id": "user/c805fcbf-3acf-4302-a97e-d82f9d7c897f/category/design"
-
 			},
 			{
 				"updated": 1367539068016,
@@ -36,19 +35,16 @@ func TestMarkerService_UnreadCounts(t *testing.T) {
 				"updated": 1367539068016,
 				"count": 3,
 				"id": "feed/http://feeds.feedburner.com/BakingObsession"
-
 			},
 			{
 				"updated": 1367539068016,
 				"count": 2,
 				"id": "feed/http://vimeo.com/mattrunks/videos/rss"
-
 			},
 			{
 				"updated": 1367539068016,
 				"count": 1,
 				"id": "feed/http://feeds.feedburner.com/DorieGreenspan"
-
 			},
 			{
 				"updated": 1367539068016,
