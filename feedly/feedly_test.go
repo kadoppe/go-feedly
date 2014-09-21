@@ -207,3 +207,9 @@ func String(v string) *string {
 	*p = v
 	return p
 }
+
+func Int(v int) *int {
+	p := new(int)
+	*p = v
+	return p
+}
