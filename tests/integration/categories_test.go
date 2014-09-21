@@ -2,7 +2,7 @@ package tests
 
 import "testing"
 
-func TestCategoryEvents(t *testing.T) {
+func TestCategories(t *testing.T) {
 	categories, _, err := client.Categories.List()
 	if err != nil {
 		t.Fatalf("Categories.List returned error: %v", err)
